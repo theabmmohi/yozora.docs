@@ -20,7 +20,6 @@ export type Config = {
   unstyled: boolean
   radius: number
 }
-export type Repo = { name: string; description: string; language: string | null; stars: number; pushed: string; url: string }
 export type PageId = "home" | "ground" | "others" | "docs"
 
 export const npmUrl = "https://www.npmjs.com/package/yozora"
@@ -55,29 +54,6 @@ export const pages: [PageId, string, LucideIcon][] = [
 ]
 
 export const swatches = ["", "#f43f5e", "#f59e0b", "#10b981", "#8b5cf6"]
-
-export const languageColors: Record<string, string> = { TypeScript: "#3178c6", JavaScript: "#f1e05a", PHP: "#4f5d95", HTML: "#e34c26", Vue: "#41b883" }
-
-export const repos: Repo[] = [
-  { name: "theabmmohi", description: "A simple repo !", language: null, stars: 0, pushed: "2026-10-13", url: "https://github.com/theabmmohi/theabmmohi" },
-  { name: "aoi", description: "", language: "TypeScript", stars: 0, pushed: "2026-10-11", url: "https://github.com/theabmmohi/aoi" },
-  { name: "bohudur", description: "TypeScript SDK for the Bohudur payment automation software", language: "TypeScript", stars: 1, pushed: "2026-09-29", url: "https://github.com/theabmmohi/bohudur" },
-  { name: "xanlok", description: "", language: "PHP", stars: 0, pushed: "2026-09-29", url: "https://github.com/theabmmohi/xanlok" },
-  { name: "bohudur-proxy", description: "", language: "TypeScript", stars: 0, pushed: "2026-09-28", url: "https://github.com/theabmmohi/bohudur-proxy" },
-  { name: "QLens", description: "", language: "JavaScript", stars: 0, pushed: "2026-08-31", url: "https://github.com/theabmmohi/QLens" },
-  { name: "waqt", description: "", language: "JavaScript", stars: 0, pushed: "2026-08-13", url: "https://github.com/theabmmohi/waqt" },
-  { name: "FetchIt", description: "", language: "TypeScript", stars: 0, pushed: "2026-08-10", url: "https://github.com/theabmmohi/FetchIt" },
-  { name: "mcp32", description: "", language: "HTML", stars: 0, pushed: "2026-08-08", url: "https://github.com/theabmmohi/mcp32" },
-  {
-    name: "samsung-DeX-launcher",
-    description: "A lightweight utility app that forces open the native Samsung DeX settings panel on devices where the option is missing or hidden by default",
-    language: "HTML",
-    stars: 0,
-    pushed: "2026-07-06",
-    url: "https://github.com/theabmmohi/samsung-DeX-launcher"
-  },
-  { name: "espxrfid", description: "I Think Its The Ultimate ESP8266 x MFRC522 🙂", language: "Vue", stars: 0, pushed: "2026-06-02", url: "https://github.com/theabmmohi/espxrfid" }
-]
 
 export const docFeatures: [LucideIcon, string, string][] = [
   [PanelBottom, "Floating glass bar", "Blur, a soft shadow and a safe-area-aware position."],

@@ -40,6 +40,7 @@ html {
   scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 70px);
 }
 * {
+  user-select: none;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -478,53 +479,6 @@ th:first-child {
   justify-content: center;
   gap: 6px;
   display: flex;
-}
-.repos {
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 10px;
-  margin-top: 14px;
-  display: grid;
-}
-.repo-card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  color: var(--fg);
-  border-radius: 18px;
-  flex-direction: column;
-  gap: 6px;
-  padding: 14px;
-  text-decoration: none;
-  display: flex;
-}
-.repo-card b {
-  color: var(--accent);
-  word-break: break-word;
-  font-size: 15px;
-}
-.repo-card .desc {
-  color: var(--muted);
-  flex: 1;
-  font-size: 13.5px;
-}
-.repo-card .meta {
-  color: var(--muted);
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 12px;
-  font-size: 12px;
-  display: flex;
-}
-.repo-card .lang,
-.repo-card .stars {
-  align-items: center;
-  gap: 5px;
-  display: inline-flex;
-}
-.repo-card .lang i {
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  display: inline-block;
 }
 .shield-link {
   text-decoration: none;
@@ -1020,4 +974,19 @@ th:first-child {
 }
 .tk-prop {
   color: #9ad1ff;
+}
+.stage {
+  --yozora-width: 100%;
+  --yozora-max-width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  margin: 10px 0 12px;
+  padding: 22px 12px;
+}
+.stage-panel {
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 12px;
+  font-size: 13px;
 }

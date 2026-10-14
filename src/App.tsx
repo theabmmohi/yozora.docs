@@ -51,7 +51,7 @@ export function App() {
       <Yozora
         aria-label="Sections"
         tabs={tabsFor(config)}
-        value={page}
+        defaultValue={page}
         onValueChange={choose}
         fullWidth={config.fullWidth}
         theme={config.theme}
